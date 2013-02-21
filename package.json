@@ -1,0 +1,26 @@
+{
+  "name": "conchologist",
+  "version": "0.0.0",
+  "description": "tool for managing a collection of shells to Digital Ocean Servers",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hortinstein/conchologist.git"
+  },
+  "keywords": [
+    "digitalocean",
+    "digital",
+    "ocean",
+    "shell",
+    "ssh",
+    "devops",
+    ""
+  ],
+  "author": "hortinstein",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "831c08938b26b0d447702d11b3e7fd3990d74763"
+}
