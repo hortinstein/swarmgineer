@@ -22,5 +22,9 @@
   "author": "hortinstein",
   "license": "BSD",
   "readmeFilename": "README.md",
-  "gitHead": "831c08938b26b0d447702d11b3e7fd3990d74763"
+  "gitHead": "831c08938b26b0d447702d11b3e7fd3990d74763",
+  "dependencies": {
+    "brinydeep": "0.0.3",
+    "control": "~0.2.3"
+  }
 }
