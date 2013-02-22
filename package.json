@@ -1,7 +1,7 @@
 {
-  "name": "conchologist",
+  "name": "dyson-engineer",
   "version": "0.0.0",
-  "description": "tool for managing a collection of shells to Digital Ocean Servers",
+  "description": "tool for managing a collection of riak nodes on Digital Ocean Servers",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/test.js"
