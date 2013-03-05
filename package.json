@@ -1,21 +1,20 @@
 {
-  "name": "dyson-engineer",
+  "name": "swarmgineer",
   "version": "0.0.0",
-  "description": "tool for managing a collection of riak nodes on Digital Ocean Servers",
+  "description": "tool for creating and managing a collection of riak nodes on digital ocean servers",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hortinstein/conchologist.git"
+    "url": "https://github.com/hortinstein/swarmgineer.git"
   },
   "keywords": [
-    "digitalocean",
-    "digital",
-    "ocean",
-    "shell",
-    "ssh",
+    "riak",
+    "cluster",
+    "manager",
+    "config",
     "devops",
     ""
   ],
@@ -25,6 +24,9 @@
   "gitHead": "831c08938b26b0d447702d11b3e7fd3990d74763",
   "dependencies": {
     "brinydeep": "0.0.3",
-    "control": "~0.2.3"
+    "control": "~0.2.3",
+    "restify": "~2.3.1",
+    "request": "~2.14.0",
+    "prompt": "~0.2.9"
   }
 }

@@ -1,17 +1,56 @@
-var control = require('control'),
-	shared = Object.create(control.controller),
-	i, l, controller, controllers;
+var request = require('request');
+//http://labs.unwieldy.net/moowheel/
+var prompt = require('prompt');
+//
+// Start the prompt
+//
+prompt.start();
 
-var brinydeep = require('brinydeep');
+//
+// Get two properties from the user: username and email
+//
+swarm_inputs = [{
+	name: "swarm_name",
+	description: "please name your swarm",
+	type: 'string',
+	pattern: /^[A-Za-z1-9]+$/,
+	message: 'name must be a alphanumeric string',
+	required: true
+}, {
+	name: "curator_size",
+	description: "what size should your curator be?",
+	type: 'string',
+	pattern: /^[1-9]+$/,
+	message: 'type must be a number',
+	default:'66'
+}, {
+	name: "nanode_size",
+	description: "what type of riak nodes would you like?",
+	type: 'string',
+	pattern: /^[1-9]+$/,
+	message: 'type must be a number'
+}, {
+	name: "num_riak_nodes",
+	description: "how many riak nodes do you need in the swarm",
+	type: 'string',
+	pattern: /^[1-9]+$/,
+	default: '5',
+	message: 'number of nodes must be a number'
+}]
 
-shared.user = 'root';
-shared.sshOptions = ['-i', '../../.ssh/digitalOcean']
-controllers = control.controllers(['192.81.219.61', '192.81.218.247'], shared);
 
-for(i = 0, l = controllers.length; i < l; i += 1) {
-	controller = controllers[i];
-	controller.ssh('date');
-	controller.ssh('date');
-	controller.ssh('date');
-}
 
+prompt.get(swarm_inputs, function(err, result) {
+	//
+	// Log the results.
+	//
+	console.log('input received:');
+	console.log('swam: ' + result.username);
+	console.log('  email: ' + result.email);
+	request.post('http://localhost:8080/init', {
+		form: {
+			key: 'value'
+		}
+	})
+
+});
