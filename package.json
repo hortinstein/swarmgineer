@@ -1,7 +1,7 @@
 {
   "name": "swarmgineer",
   "version": "0.0.0",
-  "description": "tool for creating and managing a collection of riak nodes on digital ocean servers",
+  "description": "tool for creating a riak swarm blueprint",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/test.js"

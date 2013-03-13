@@ -20,16 +20,16 @@ default:
 default:
 	'66'
 }]
-var apis.prompts = function(callback) {
+apis.prompts = function(callback) {
 		prompt.start();
-		prompt.get(swarm_inputs, function(e, r) {
+		prompt.get(api_inputs, function(e, r) {
 			digital_ocean.setup(r.client_key,r.api_key);
 			callback(e, digital_ocean);
 		});
 	};
-var apis.prompts = function(callback) {
-
+apis.sizes = function(callback) {
+	digital_ocean.sizes(callback);
 };
 
 
-module.exports = prompts;
+module.exports = apis;

@@ -1,7 +1,7 @@
 swarmgineer
 ============
 
-Tool for managing a collection of riak nodes on Digital Ocean Servers
+tool for creating a riak swarm blueprint
 
 AB Testing Notes:
 
