@@ -23,7 +23,7 @@
   "readmeFilename": "README.md",
   "gitHead": "831c08938b26b0d447702d11b3e7fd3990d74763",
   "dependencies": {
-    "brinydeep": "0.0.3",
+    "brinydeep": "*",
     "control": "~0.2.3",
     "restify": "~2.3.1",
     "request": "~2.14.0",
