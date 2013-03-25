@@ -15,8 +15,8 @@
     "90.2.2.25"
   ],
   "ports": {
-    "IP": "0.0.3",
-    "control": "~0.2.3"
+    "raik": "23",
+    "control": "213"
   },
   "storage_backend": "riak_kv_eleveldb_backend",
   "init_cookie":"justatestcookie",

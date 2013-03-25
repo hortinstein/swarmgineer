@@ -9,7 +9,7 @@ var read_config = function (path, callback){
         }
     }
     catch (e) {
-        console.log('swarm configuration file not found, creating new'
+        console.log('swarm configuration file not found, creating new');
     }
 };
 
@@ -24,4 +24,5 @@ if (!module.parent) {
 //if the module is called from another program to modify existing json
 else {
     
+    module.exports = read_config; 
 }
