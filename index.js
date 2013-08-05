@@ -1,3 +1,7 @@
+
+swarmlicator = require('swarmlicator');
+
+
 var read_config = function (path, callback){
     var fs = require('fs');
     try {
@@ -15,6 +19,8 @@ var read_config = function (path, callback){
 
 //if the module is executed directly
 if (!module.parent) {
+    //check to see if a config already exists
+    
     var prompts = require('./user_prompts/swarm_prompts.js');
     var argv = require('optimist').argv;
 	prompts(function (e,r) {
@@ -23,6 +29,5 @@ if (!module.parent) {
 } 
 //if the module is called from another program to modify existing json
 else {
-    
     module.exports = read_config; 
 }
